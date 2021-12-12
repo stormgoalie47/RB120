@@ -1,0 +1,69 @@
+welcome: "Welcome to Python, JavaScript, Ruby, C++, Swift (PJRCS)!"
+
+detail:  " This is a variation of rock paper scissors, where you will\n
+          choose from one of five programming languages and the computer\n
+          will chooose one too. See the rules below:\n\n"
+
+computer_info: "A random computer will be selected. Some computers have odd personalites\n
+                \tand will only choose certain programming languages."
+
+personalities: " Steve Jobs will only choose Swift.\n
+                Bjarne Stroustrup just does not like Ruby...\n
+                Dennis Ritchie will never choose what you do because he can read your mind.\n
+                \tmind, but doesn't remember what moves win (so it's not really cheating).\n
+                Yukihiro Matsumoto will use any language.\n\n"
+
+rules: " Python erases Javascript and C++.\n
+        JavaScript empties Ruby and Swift core libraries.\n
+        Ruby pops off C++ and Python.\n
+        C++ deconstructs Swift and JavaScript.\n
+        Swift scrambles Python and Ruby code.\n\n\n"
+
+Steve Jobs: "Steve Jobs will only choose Swift.\n\n"
+
+Bjarne Stroustrup: "Bjarne Stroustrup just does not like Ruby...\n\n"
+
+Dennis Ritchie: "Dennis Ritchie will never choose what you do because he can read\n
+                \tyour mind, but doesn't remember what moves win...\n\n"
+
+Yukihiro Matsumoto: "Yukihiro Matsumoto will use any language.\n\n"
+
+goodbye: "Thank you for playing PJRCS! Come back another time!"
+
+get_name: "Please enter your name:\n\n"
+
+no_name: "Sorry, you must enter a name!\n\n"
+
+number_games: ", how many rounds per match would you like to play?\n\n
+               \tFirst to win the number you choose will win the match!\n\n"
+
+return_continue: "Press return to continue."
+
+return_continue_hx: "Enter history(h) if you would like to frequency of moves.\n
+                     \tHit Enter to continue"
+
+player_choose: "Please select a languages: Python(P), JavaScipt(J), 
+                Ruby(R), C++(C) or Swift(S)\n\n"
+
+wrong_choice: "Sorry. You must enter P, J, R, C, or S for the corresponding language."
+
+play_again: "Would you like to play another match? yes(y)/no(n)\n"
+
+y_or_n: "Sorry, you must enter 'yes(y)' or 'no(n)'.\n"
+
+moves_made: " made the following moves:"
+
+cplusplus: "C++"
+:cplusplus: "C++"
+
+ruby: "Ruby"
+:ruby: "Ruby"
+
+python: "Python"
+:python: "Python"
+
+javascript: "Javascript"
+:javascript: "Javascript"
+
+swift: "Swift"
+:swift: "Swift"
