@@ -59,7 +59,7 @@ class Board
   def initialize
     set_dimension
     set_number_to_win
-    
+
     determine_winning_rows!
 
     reset
@@ -91,7 +91,7 @@ class Board
     self.winner = nil
 
     self.squares = {}
-    (1..(dimension ** 2)).each { |square| squares[square] = Square.new }
+    (1..(dimension**2)).each { |square| squares[square] = Square.new }
   end
 
   def best_move(mark, opponent_mark)
@@ -112,7 +112,8 @@ class Board
 
   private
 
-  attr_accessor :squares, :dimension, :number_shifts, :number_to_win, :winning_rows
+  attr_accessor :squares, :dimension, :number_shifts,
+                :number_to_win, :winning_rows
   attr_writer :winner
 
   def empty_square(row)
@@ -172,21 +173,23 @@ class Board
     end
     square
   end
-  
+
   def draw_empty_lines
-    (dimension - 1).times {print "       |" }
+    (dimension - 1).times { print "       |" }
     puts
-    (dimension - 1).times {print "       |" }
+    (dimension - 1).times { print "       |" }
     puts
   end
 
   def draw_separator_line
-    (dimension - 1).times {print "-------+" }
+    (dimension - 1).times { print "-------+" }
     print "-------\n"
   end
 
   def draw_marks(start_index)
-    (dimension - 1).times { |shift| print "   #{squares[start_index + shift].marker}   |" }
+    (dimension - 1).times do |shift|
+      print "   #{squares[start_index + shift].marker}   |"
+    end
     print "   #{squares[start_index + (dimension - 1)].marker}"
     puts
   end
@@ -208,16 +211,18 @@ class Board
       row = []
       left_num = iteration * dimension + shift
       1.upto(number_to_win) { |num_to_right| row << left_num + num_to_right }
-      self.winning_rows << row
+      winning_rows << row
     end
   end
 
   def columns!(shift)
     (1..dimension).each do |top_number|
       row = []
-      top_number = top_number + (shift * dimension)
-      number_to_win.times { |down_rows| row << top_number + (down_rows * dimension)}
-      self.winning_rows << row
+      top_number += shift * dimension
+      number_to_win.times do |down_rows|
+        row << top_number + (down_rows * dimension)
+      end
+      winning_rows << row
     end
   end
 
@@ -228,7 +233,7 @@ class Board
       number_to_win.times do |multiplier|
         squares << start_num + (multiplier * (dimension - 1))
       end
-      self.winning_rows << squares.flatten
+      winning_rows << squares.flatten
     end
   end
 
@@ -239,7 +244,7 @@ class Board
       number_to_win.times do |multiplier|
         squares << start_num + (multiplier * (dimension + 1))
       end
-      self.winning_rows << squares.flatten
+      winning_rows << squares.flatten
     end
   end
 end
@@ -479,6 +484,7 @@ class TicTacToeGame
   def play_again?
     answer = nil
     loop do
+      puts
       prompt 'play_again?'
       answer = gets.chomp.downcase
       break if YES_NO.include?(answer)
