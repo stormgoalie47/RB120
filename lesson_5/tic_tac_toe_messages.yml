@@ -1,0 +1,29 @@
+welcome: "Welcome to Tic Tac Toe!"
+
+goodbye: "Thank you for playing! Goodbye!"
+
+return_to_continue: "Press return to continue."
+
+dimension: "What size board would you like to play on? Choose a number of at least 3:"
+
+incorrect_dimension: "Sorry, you must enter a number of at least 3."
+
+number_to_win: "How many in a row to win the game? Must be at least 3 and smaller than the board size:"
+
+incorrect_number_to_win: "Sorry. It must be at least 3."
+
+player_name: "Please enter your name:"
+
+incorrect_name: "Sorry, please enter your name. Must be 1 or more characters."
+
+player_mark: "Please enter a single character to use for your mark:"
+
+incorrect_mark: "Sorry, please choose a single character."
+
+human_move: "Please choose the square number you would like to mark:"
+
+choose_open_square: "Please choose an open square!!!"
+
+play_again?: "Would you like to play again? y/n"
+
+yes_or_no: "Sorry, you must enter yes(y) or no(n)."
