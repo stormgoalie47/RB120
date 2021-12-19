@@ -1,4 +1,3 @@
-require 'pry'
 require 'yaml'
 MESSAGES = YAML.load_file 'tic_tac_toe_messages.yml'
 
